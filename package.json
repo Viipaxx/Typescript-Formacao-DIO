@@ -1,0 +1,26 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "- Uma linguagem de programação e um superset para Javascritp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viipaxx/Typescript-Formacao-DIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viipaxx/Typescript-Formacao-DIO/issues"
+  },
+  "homepage": "https://github.com/Viipaxx/Typescript-Formacao-DIO#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  }
+}
