@@ -3,19 +3,16 @@
 
 const array: Array<number> = [1, 2, 3, 4]
 
-const stringArray: string[] = ['a', 'b', 'c']
+    // manipulando array
 
-// Adicionando e removendo elementos
-const tamanhoArray = stringArray.length
+// const buscaNum = array.find(num => num > 2)
 
-console.log('Array original', array)
+// console.log(buscaNum)
 
-array.pop()
+array.forEach(num => {
+    if (num > 2){
+        console.log(num)
+    }
+})
 
-console.log('array retirando o ultimo elemento', array)
-
-console.log('Array original', array)
-
-array.push(5)
-
-console.log('array com novo elemento', array)
+// array.map(num => console.log(num))
