@@ -1,28 +1,26 @@
 
-// Decisões 
+// Estrutura de  repetição
 
-const num: number = 15
+// for
 
-if (num > 15){ 
-    console.log('Num maior que 15')
-} else if (num === 15) {
-    console.log('Num igual a 15')
-} else {
-    console.log('Num menor que 15')
+for (let i = 0; i < 5; i++) {
+    console.log(i)
 }
 
-const typeUser = {
-    admin: 'Seja bem vindo admin',
-    student: 'Você é um estudante',
-    viewer: 'Você pode visualizar'
+// while
+
+let n = 0
+
+while (n < 5) {
+    console.log(n)
+    n++
 }
 
-function validateUser(user: string){
-    console.log(typeUser[user as keyof typeof typeUser ])
-}
+// do while
 
-const usuario = 'admin'
+n = 0
 
-validateUser(usuario)
-validateUser('student')
-validateUser('viewer')
+do {
+    console.log(n)
+    n++
+} while (n < 5);
