@@ -1,35 +1,28 @@
 
-// Objetos e interfaces
+// Decisões 
 
-interface Pessoa {
-    nome: string,
-    idade: number,
-    profissao?: string, // torna a variável opcional
+const num: number = 15
+
+if (num > 15){ 
+    console.log('Num maior que 15')
+} else if (num === 15) {
+    console.log('Num igual a 15')
+} else {
+    console.log('Num menor que 15')
 }
 
-const pessoa: Pessoa = {
-    nome: 'Vitor',
-    idade: 32,
-    profissao: 'Fullstack developer'
+const typeUser = {
+    admin: 'Seja bem vindo admin',
+    student: 'Você é um estudante',
+    viewer: 'Você pode visualizar'
 }
 
-const outraPessoa: Pessoa = {
-    nome: 'Igor',
-    idade: 18,
-    profissao: 'Design'
+function validateUser(user: string){
+    console.log(typeUser[user as keyof typeof typeUser ])
 }
 
-const arrayPessoa: Pessoa[] /* ...: Array<Pessoa> */ = [
-    pessoa,
-    outraPessoa
-]
+const usuario = 'admin'
 
-const arrayNum: number[] = [
-    1, 2, 3
-]
-
-const arrayString: Array<string> = [
-    '1', '2', '3'
-]
-
-console.log(arrayNum, arrayPessoa, arrayString, outraPessoa, pessoa)
+validateUser(usuario)
+validateUser('student')
+validateUser('viewer')
