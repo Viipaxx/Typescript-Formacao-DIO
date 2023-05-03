@@ -1,22 +1,28 @@
 
-//  POO
+class Account {
 
-class User {
     name: string
-    age: number
+    accountNumber: number
+    balance: number
 
-    constructor(name: string, age: number){
+    constructor(name: string, accountNumber: number){
         this.name = name
-        this.age = age
+        this.accountNumber = accountNumber
+        this.balance = 10.50
     }
 
-    showName = () => {
-        console.log(this.name)
+    deposit = () => {
+        console.log('Você depositou!')
     }
+
+    withdraw = () => {
+        console.log('Você sacou!')
+    }
+
 }
 
-const user = new User('Vitor', 19)
-user.showName()
+const newAccount: Account = new Account('Vitor', 1)
+console.log(newAccount)
 
-const otherUser = new User('Igor', 18)
-otherUser.showName()
+const account: Account = new Account('Igor', 28)
+account.deposit()
