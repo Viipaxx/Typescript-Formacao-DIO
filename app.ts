@@ -1,18 +1,22 @@
 
-// Array
+//  POO
 
-const array: Array<number> = [1, 2, 3, 4]
+class User {
+    name: string
+    age: number
 
-    // manipulando array
-
-// const buscaNum = array.find(num => num > 2)
-
-// console.log(buscaNum)
-
-array.forEach(num => {
-    if (num > 2){
-        console.log(num)
+    constructor(name: string, age: number){
+        this.name = name
+        this.age = age
     }
-})
 
-// array.map(num => console.log(num))
+    showName = () => {
+        console.log(this.name)
+    }
+}
+
+const user = new User('Vitor', 19)
+user.showName()
+
+const otherUser = new User('Igor', 18)
+otherUser.showName()
