@@ -1,26 +1,21 @@
 
-// Estrutura de  repetição
+// Array
 
-// for
+const array: Array<number> = [1, 2, 3, 4]
 
-for (let i = 0; i < 5; i++) {
-    console.log(i)
-}
+const stringArray: string[] = ['a', 'b', 'c']
 
-// while
+// Adicionando e removendo elementos
+const tamanhoArray = stringArray.length
 
-let n = 0
+console.log('Array original', array)
 
-while (n < 5) {
-    console.log(n)
-    n++
-}
+array.pop()
 
-// do while
+console.log('array retirando o ultimo elemento', array)
 
-n = 0
+console.log('Array original', array)
 
-do {
-    console.log(n)
-    n++
-} while (n < 5);
+array.push(5)
+
+console.log('array com novo elemento', array)
