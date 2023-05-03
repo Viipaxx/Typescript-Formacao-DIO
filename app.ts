@@ -1,14 +1,13 @@
 
-class Account {
+abstract class Account {
 
     name: string
     accountNumber: number
-    balance: number
+    balance: number = 0
 
     constructor(name: string, accountNumber: number){
         this.name = name
         this.accountNumber = accountNumber
-        this.balance = 10.50
     }
 
     deposit = () => {
@@ -19,10 +18,21 @@ class Account {
         console.log('Você sacou!')
     }
 
+    getBalance = () => {
+        console.log(this.balance)
+    }
+
 }
 
-const newAccount: Account = new Account('Vitor', 1)
-console.log(newAccount)
+class PeopleAccount extends Account{
+    doc_id: number
 
-const account: Account = new Account('Igor', 28)
-account.deposit()
+    constructor(doc_id:number, name:string, numberAccount: number){
+        super(name, numberAccount)
+        this.doc_id = doc_id
+    }
+}
+
+
+const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Vitor', 10)
+console.log(peopleAccount)
